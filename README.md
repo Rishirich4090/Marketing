@@ -13,19 +13,19 @@ The output will be in the `dist/fusion-angular-tailwind-starter` directory.
 ## Deploying to Vercel
 
 1. [Install Vercel CLI](https://vercel.com/docs/cli) (optional):
-	```sh
-	npm i -g vercel
-	```
+   ```sh
+   npm i -g vercel
+   ```
 2. Push your project to a Git repository (GitHub, GitLab, etc.).
 3. Go to [Vercel Dashboard](https://vercel.com/) and import your repository.
 4. Set the **Build Command** to:
-	```sh
-	npm run vercel-build
-	```
+   ```sh
+   npm run vercel-build
+   ```
 5. Set the **Output Directory** to:
-	```sh
-	dist/fusion-angular-tailwind-starter
-	```
+   ```sh
+   dist/fusion-angular-tailwind-starter/browser
+   ```
 6. (Optional) Add environment variables as needed.
 7. Deploy!
 

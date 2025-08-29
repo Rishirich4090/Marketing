@@ -1,13 +1,5 @@
 {
-  "version": 2,
-  "public": true,
-  "builds": [
-    {
-      "src": "dist/fusion-angular-tailwind-starter/browser/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
