@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-md transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-6 rounded-md transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-slate-100 shadow-card;
+  }
+
+  .section-padding {
+    @apply py-24 px-20;
+  }
+
+  .container-custom {
+    @apply max-w-screen-xl mx-auto px-8;
+  }
+
+  .nav-link {
+    @apply relative pb-2;
+  }
+
+  .nav-link.active-nav-link {
+    @apply font-semibold;
+  }
+
+  .nav-link.active-nav-link::after {
+    content: '';
+    @apply absolute -bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-100 transition-transform duration-300;
+  }
+
+  .nav-link:not(.active-nav-link)::after {
+    content: '';
+    @apply absolute -bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 transition-transform duration-300;
+  }
+
+  .nav-link:hover:not(.active-nav-link)::after {
+    @apply scale-x-100;
+  }
+
+  .nav-link-mobile {
+    @apply py-2 px-4 rounded-md;
+  }
+
+  .nav-link-mobile.active-nav-link-mobile {
+    @apply font-semibold bg-slate-100;
+  }
+}
